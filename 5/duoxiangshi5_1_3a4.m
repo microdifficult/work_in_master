@@ -1,0 +1,21 @@
+p1=linspace(1,5,5)
+p2=logspace(1,2,5)
+y1=poly2sym(p1)
+y2=poly2sym(p2)
+c=conv(p1,p2)
+y3=poly2sym(c)
+p3=sym2poly(y3)
+[q,r]=deconv(p1,p2)
+y4=poly2sym(q)
+y5=poly2sym(r)
+clear all;
+p1=[3 6 5 8]
+p2=[2 0 9 6 8 4]
+q1=polyder(p1)
+y1=poly2sym(q1)
+q2=polyder(p1,p2)
+y2=poly2sym(q2)
+[q,d]=polyder(p2,p1)     %¶ººÅ´ò³É¾äºÅ%
+q=poly2sym(q)
+d=poly2sym(d)
+z=polyint(p1,3)

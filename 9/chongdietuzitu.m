@@ -1,0 +1,11 @@
+clear all;
+x=-pi:pi/10:pi;
+figure;
+subplot(221);
+plot(x,sin(x),'r--');
+hold on;
+plot(x,sin(2*x),'b--');
+subplot(223);
+plot(x,cos(x),'b:*');
+subplot(2,2,[2,4]);
+plot(x,sin(x)+cos(x),'b-.^');

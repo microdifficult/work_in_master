@@ -1,0 +1,20 @@
+clear all;
+a=10*rand(4,4)
+A=zeros(size(a))
+A1=zeros(3,3)
+A2=zeros(3,3,3,3)
+B=ones(size(a))
+B1=ones(3,3)
+C=eye(3,3)
+C1=eye(3,4)
+C2=eye(size(a))
+D=randn(3)
+E=magic(4)   %Êı¶À%
+F=vander([1 2 3 4])   %·¶µÂÃÉ¾ØÕó%
+F1=vander([1;2;3;4])
+G=hilb(3)   %Ï£¶û²®ÌØ¾ØÕó%
+G1=invhilb(3)
+G2=G*G1
+H=toeplitz(3:6,3:8) %ÍØÆÕÀû×È¾ØÕó%
+I=compan(2:6)
+J=pascal(4)

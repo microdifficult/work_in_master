@@ -1,0 +1,5 @@
+% options = optimset(optimset,'MaxFunEvals',1000);
+beta0=[1.15,1,2.6,1.5,1];
+options = optimset(optimset,'MaxFunEvals',1000);
+[X,RESNORM,RESIDUAL,EXITFLAG,OUTPUT]=lsqcurvefit(@myfun,beta0,x,y)
+% [beta,r,j]=nlinfit(x,y,@myfun,beta0)

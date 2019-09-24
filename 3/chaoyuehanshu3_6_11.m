@@ -1,0 +1,5 @@
+a=10*rand(4)
+A=sqrtm(a)
+B=logm(a)
+C=expm(a)
+D=funm(a,@sin)

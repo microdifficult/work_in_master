@@ -1,0 +1,8 @@
+syms x a b c
+a=[1 1 1 1;
+    x a 
+    2 x+1 1;
+    -1 1 x+1]
+b=solve(det(a))
+
+    

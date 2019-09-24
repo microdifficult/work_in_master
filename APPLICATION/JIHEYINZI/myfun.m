@@ -1,0 +1,9 @@
+function yy=myfun(beta,x)
+a=beta(1);
+b=beta(2);
+c=beta(3);
+d=beta(4);
+e=beta(5);
+x1=x(:,1);
+x2=x(:,2);
+yy=(x1.^beta(5)).*((1-beta(1).*(x2.^beta(2)+x2.^beta(3)).*exp(-x2))).^beta(4)

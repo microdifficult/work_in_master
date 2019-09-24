@@ -1,0 +1,9 @@
+z1=3+4i;
+a1=real(z1)
+a2=imag(z1)
+b1=abs(z1)
+b2=angle(z1)
+c1=conj(z1)
+z2=complex(1:3,2:4)
+real(z2)
+imag(z2)

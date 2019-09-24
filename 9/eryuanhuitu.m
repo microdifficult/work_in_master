@@ -1,0 +1,15 @@
+clear all;
+x=0:0.1:6;
+y=sin(x);
+figure;
+plot(x,y,'gh-.');
+clear all;
+x=1:7;
+y=magic(7);
+figure;
+plot(x,y,'b-p');
+clear all;
+x=rand(9,5);
+y=rand(9,5);
+figure;
+plot(x,y);

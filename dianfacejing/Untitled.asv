@@ -1,0 +1,6 @@
+clc
+clear all;
+i=1:50;
+hmc=7.875*2.504-
+cnl_corr2=0.825^0.25*i*(hmc)^0.735*(i-0.225)*0.25+i;
+plot(i,cnl_corr2);

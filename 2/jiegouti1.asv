@@ -1,0 +1,4 @@
+clear all;
+s1=struct('type',{'big','little'},'color',{'red','blue'},'data',{[1 2 3;2 3 4],[1:4]});
+f1=isstruct(s1)
+f2=isfield(s1,'trp')

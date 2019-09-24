@@ -1,0 +1,3 @@
+clc
+clear all
+[x,fval]=fminbnd(@cos,-0.01,pi+1)

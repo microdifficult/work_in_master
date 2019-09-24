@@ -1,0 +1,30 @@
+clc
+clear all;
+x=0:0.2:2;
+y=(x.^2-3*x+5).*exp(-3.*x).*sin(x);    %.^与.*的用法%
+xi=0:0.03:3;
+yi_nearest=interp1(x,y,xi,'nearest',NaN);
+yi_linear=interp1(x,y,xi,'linear','extrap');
+yi_spine=interp1(x,y,xi,'spine','extrap');
+yi_pchip=interp1(x,y,xi,'pchip','extrap');
+yi_v5cubic=interp1(x,y,xi,'v5cubic',NaN);
+figure;
+hold on;
+subplot(231);
+plot(x,y,'ro');
+title('已知数据点');
+subplot(232);
+plot(x,y,'ro',xi,yi_nearest,'b-');
+title('邻近插值');
+subplot(233);
+plot(x,y,'ro',xi,yi_linear,'b-');
+title('线性插值');
+subplot(234);
+plot(x,y,'ro',xi,yi_spine,'b-');
+title('三次样条插值');
+subplot(235);
+plot(x,y,'ro',xi,yi_pchip,'b-');
+title('分段三次hermit插值');
+subplot(236);
+plot(x,y,'ro',xi,yi_v5cubic,'b-');
+title('三次多项式插值');

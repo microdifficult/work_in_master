@@ -1,0 +1,8 @@
+a=hilb(4)
+b=pascal(4)
+c=toeplitz(3:6)
+d=vander(1:4)
+A=eig(a)
+B=eig(b)
+C=eig(c)
+D=eig(d)
